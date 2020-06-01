@@ -48,27 +48,6 @@ After the script is finished there should be a file ```results/har/ctrnn_32.csv`
 - ```test loss```: Loss on the test set
 - ```test accuracy```: Metric on the test set
 
-Note that metric is accuracy on the first three datasets and mean squared error/F1-score on the other two datasets respectively. 
-
-## Extrapolation figures
-
-The frequentcy extrapolation figures can be sampled through the jupyter notebook ```extrapolation_figures.ipynb```.
-
-Alternatively, one can use the file ```freq_exp_utils.py```.
-
-Example:
-```bash
-python3 freq_exp_utils.py --fig ring --model ltc --k 16 --epochs 50000
-```
-The script ```freq_exp_utils.py``` accepts the following four agruments:
-- ```--fig:   ball | cross | boxes | ring```
-- ```--model: lstm | ctrnn | ltc | ltc_rk | ltc_ex```
-- ```--epochs: number of training epochs (default 1000)```
-- ```--size: number of hidden RNN units  (default 16)```
-
-Note that, because of the vanishing gradient, the CT-RNN and LTC models may require a large number of training epochs, e.g. 50,000.
-
-
 ## Hyperparameters
 
 | Parameter | Value | Description | 
