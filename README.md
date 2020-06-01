@@ -74,14 +74,13 @@ Note that, because of the vanishing gradient, the CT-RNN and LTC models may requ
 | Parameter | Value | Description | 
 | ---- | ---- | ------ |
 | Minibatch size | 16 | Number of training samples over which the gradient descent update is computed |
-| Learning rate | 0.001/0.01 | Factor multiplied with the gradient before each update. 0.01 for LTC, 0.001 for all other models. |
-| RNN hidden units | 32 | Number of hidden units of each RNN model |
-| Momentum method | Adam | See (Kingma and Ba, 2014) |
+| Learning rate | 0.001/0.02 | 0.01-0.02 for LTC, 0.001 for all other models. |
+| Hidden units | 32 | Number of hidden units of each model |
+| Optimizer | Adam | See (Kingma and Ba, 2014) |
 | beta_1 | 0.9 | Parameter of the Adam method |
 | beta_2 | 0.999 | Parameter of the Adam method |
-| epsilon | 1e-07 | Epsilon-hat parameter of the Adam method |
+| epsilon | 1e-08 | Epsilon-hat parameter of the Adam method |
 | Number of epochs | 200 | Maximum number of training epochs |
 | BPTT length | 32 | Backpropagation through time length in time-steps | 
-| ODE solver unfolds | 3 | Number of ODE solver steps per input/output time-step |
-| Validation set ratio | 10% | Ratio of training samples separated into the validation set | 
+| ODE solver sreps | 1/6 | relative to input sampling period |
 | Validation evaluation interval | 1 | Interval of training epochs when the metrics on the validation are evaluated  | 
