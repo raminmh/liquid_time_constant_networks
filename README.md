@@ -1,1 +1,1 @@
-# expressivity_of_time_continuous_models
+# Liquid time-constant Networks (LTCs)
