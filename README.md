@@ -63,3 +63,10 @@ After the script is finished there should be a file ```results/har/ctrnn_32.csv`
 | BPTT length | 32 | Backpropagation through time length in time-steps | 
 | ODE solver sreps | 1/6 | relative to input sampling period |
 | Validation evaluation interval | 1 | Interval of training epochs when the metrics on the validation are evaluated  | 
+
+
+# Trajectory Length Analysis
+
+Run the ```main.m``` file to get trajectory length results for the desired setting tuneable in the code. 
+
+
