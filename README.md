@@ -1,6 +1,12 @@
 # Liquid time-constant Networks (LTCs)
-
-## Reproduability
+This is the official repository for LTC networks described in paper: https://arxiv.org/abs/2006.04439
+This repository alows you to train continuous-time models with backpropagation through-time (BPTT). Available Continuous-time models are: 
+| Models | References |
+| ----- | ----- |
+| Liquid time-constant Networks | https://arxiv.org/abs/2006.04439 |
+| Neural ODEs | https://papers.nips.cc/paper/7892-neural-ordinary-differential-equations.pdf |
+| Continuous-time RNNs | https://www.sciencedirect.com/science/article/abs/pii/S089360800580125X |
+Continuous-time Gated Recurrent Units (GRU) | https://arxiv.org/abs/1710.04110 |
 
 ## Requisites
 
