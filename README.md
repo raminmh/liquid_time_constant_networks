@@ -1,6 +1,7 @@
 # Liquid time-constant Networks (LTCs)
 
-[Update] New PyTorch Version of LTCs is coming up soon! Stay tuned! 
+[Update] A Pytorch version is added in our sister repository: 
+https://github.com/mlech26l/keras-ncp
 
 This is the official repository for LTC networks described in paper: https://arxiv.org/abs/2006.04439
 This repository alows you to train continuous-time models with backpropagation through-time (BPTT). Available Continuous-time models are: 
