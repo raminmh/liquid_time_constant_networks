@@ -1,10 +1,10 @@
 # Liquid time-constant Networks (LTCs)
 
-[Update] A Pytorch version is added in our sister repository: 
-https://github.com/mlech26l/keras-ncp
+[Update] A Pytorch version together with tutorials are added to our sister repository: 
+[https://github.com/mlech26l/keras-ncp](https://github.com/mlech26l/ncps)
 
-This is the official repository for LTC networks described in paper: https://arxiv.org/abs/2006.04439
-This repository alows you to train continuous-time models with backpropagation through-time (BPTT). Available Continuous-time models are: 
+This is the official repository for LTC networks described in the paper: https://arxiv.org/abs/2006.04439
+This repository allows you to train continuous-time models with backpropagation through-time (BPTT). Available Continuous-time models are: 
 | Models | References |
 | ----- | ----- |
 | Liquid time-constant Networks | https://arxiv.org/abs/2006.04439 |
@@ -14,12 +14,12 @@ Continuous-time Gated Recurrent Units (GRU) | https://arxiv.org/abs/1710.04110 |
 
 ## Requisites
 
-All models were implemented tested with TensorFlow 1.14.0 and python3 on Ubuntu 16.04 and 18.04 machines.
-All following steps assume that they are executed under these conditions.
+All models were implemented and tested with TensorFlow 1.14.0 and python3 on Ubuntu 16.04 and 18.04 machines.
+All the following steps assume that they are executed under these conditions.
 
 ## Preparation
 
-First we have to download all datasets by running 
+First, we have to download all datasets by running 
 ```bash
 source download_datasets.sh
 ```
@@ -27,23 +27,23 @@ This script creates a folder ```data```, where all downloaded datasets are store
 
 ## Training and evaluating the models 
 
-There is exactly one python module per dataset:
+There is exactly one Python module per dataset:
 - Hand gesture segmentation: ```gesture.py```
 - Room occupancy detection: ```occupancy.py```
 - Human activity recognition: ```har.py```
 - Traffic volume prediction: ```traffic.py```
 - Ozone level forecasting: ```ozone.py```
 
-Each script accepts the following four agruments:
+Each script accepts the following four arguments:
 - ```--model: lstm | ctrnn | ltc | ltc_rk | ltc_ex```
 - ```--epochs: number of training epochs (default 200)```
 - ```--size: number of hidden RNN units  (default 32)```
 - ```--log: interval of how often to evaluate validation metric (default 1)```
 
-Each script trains the specified model for the given number of epochs and evalutates the
+Each script trains the specified model for the given number of epochs and evaluates the
 validation performance after every ``log`` steps.
-At the end of training, the best performing checkpoint is restored and the model is evaluated on the test set.
-All results are stored in the ```results``` folder by appending the result to CSV-file.
+At the end of the training, the best-performing checkpoint is restored and the model is evaluated on the test set.
+All results are stored in the ```results``` folder by appending the result to CSV file.
 
 For example, we can train and evaluate the CT-RNN by executing
 ```bash
